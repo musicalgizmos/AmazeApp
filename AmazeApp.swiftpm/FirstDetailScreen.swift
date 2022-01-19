@@ -12,7 +12,6 @@ struct FirstDetailScreen: View {
     @State private var showAddClassroom = false
     
     var body: some View {
-//        NavigationView {
             VStack(spacing: 20) {
                 if store.classrooms.isEmpty {
                     Text("Add Classrooms")
@@ -40,23 +39,5 @@ struct FirstDetailScreen: View {
                 }
               }
             }
-//        }
     }
 }
-
-struct FirstDetailScreen_Previews: PreviewProvider {
-  static var previews: some View {
-      FirstDetailScreen()
-          .environmentObject(DataStore())
-  }
-}
-
-
-//NavigationView {
-//    List(hikingTrails) { trail in
-//        NavigationLink(destination: DetailView(trail: trail)) {
-//            TrailRow(trail: trail)
-//        }
-//    }
-//    .navigationBarTitle("Hiking Trails")
-//}
