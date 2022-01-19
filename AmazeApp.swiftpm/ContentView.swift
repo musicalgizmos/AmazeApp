@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -11,7 +12,7 @@ struct ContentView: View {
                     .foregroundColor(.accentColor)
                 Spacer()
                 NavigationLink(destination: FirstDetailScreen()) {
-                    Text("Go to FirstDetailScreen")
+                    Text("Classrooms")
                         .font(.title2)
                         .padding()
                         .border(Color.purple, width: 5)
